@@ -1,0 +1,314 @@
+{
+  "settings": {
+    "currentPage": "index.html",
+    "theme": {
+      "name": "creatorm5",
+      "title": "CreatorM5",
+      "styling": {
+        "primaryColor": "#ff4433",
+        "secondaryColor": "#8C8C95",
+        "successColor": "#eff0f6",
+        "infoColor": "#3f69ff;",
+        "warningColor": "#FF9417",
+        "dangerColor": "#179EFF",
+        "mainFont": "Space Grotesk",
+        "display1Font": "Space Grotesk",
+        "display1Size": 4.375,
+        "display2Font": "Space Grotesk",
+        "display2Size": 2.375,
+        "display5Font": "Space Grotesk",
+        "display5Size": 1.5,
+        "display7Font": "Space Grotesk",
+        "display7Size": 1.375,
+        "display4Font": "Space Grotesk",
+        "display4Size": 1.125,
+        "isRoundedButtons": true,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "titlePreset": "Youtube Video Creator",
+      "nameSelectPreset": "youtube-video-creator",
+      "presetSourceTheme": "creatorm5",
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "name": "Site-01-17_1405",
+    "versionFirst": "5.7.4",
+    "siteFonts": [
+      {
+        "css": "'Space Grotesk', sans-serif",
+        "name": "Space Grotesk",
+        "url": "https://fonts.googleapis.com/css?family=Space+Grotesk:300,400,500,600,700"
+      }
+    ],
+    "imageResize": true,
+    "uniqCompNum": 0,
+    "versionPublish": "5.7.4",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".row": {
+              "align-items": "center",
+              "justify-content": "space-between"
+            },
+            ".mbr-section-title": {
+              "width": "100%",
+              "text-align": "center",
+              "margin-bottom": "24px",
+              "line-height": "1.171em",
+              "color": "#ff4433"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#4c4c4c",
+              "width": "100%",
+              "text-align": "left"
+            },
+            ".mbr-text": {
+              "color": "#8c8c95",
+              "margin-bottom": "36px"
+            },
+            ".right-side": {
+              "max-width": "554px"
+            },
+            ".rs": {
+              "margin-right": "60px"
+            },
+            ".mbr-section-btn": {
+              "width": "auto",
+              "display": "inline-block"
+            },
+            ".margin": {
+              "margin-right": "14px"
+            },
+            ".gray": {
+              "padding": "45px 0",
+              "background-color": "@accentColor"
+            },
+            "img": {
+              "position": "relative",
+              "right": "40px"
+            },
+            "@media (max-width: 767px)": {
+              ".gray": {
+                "padding": "0px 0 5px"
+              },
+              "img": {
+                "right": "initial",
+                "width": "90%",
+                "margin": "auto",
+                "top": "-35px"
+              },
+              ".col-md-5": {
+                "padding-top": "90px"
+              }
+            },
+            "@media (max-width: 430px)": {
+              ".b": {
+                "margin-bottom": "10px"
+              }
+            },
+            ".btn": {
+              "margin-top": "20px"
+            },
+            "a.btn > span": {
+              "margin-left": "0.5rem"
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text, .button-align": {
+              "text-align": "center",
+              "color": "#000000"
+            }
+          },
+          "_name": "header1",
+          "_sourceTheme": "creatorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n        <header>Items</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton\" checked>\n        <input type=\"color\" title=\"Accent\" name=\"accentColor\" value=\"#ff695c\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"right-side\">\n                    <h5 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Recupere a su ser Amado</b><div><b><br></b></div></h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .button-align\" mbr-if=\"showText\">\n                        Tenemos experiencia en amarres de amor, ayudamos a que su pareja regrese.<br><br>Cambia tu relación para siempre con nuestra ayuda, comunícate con nuestros expertos y recuperaras el amor perdido.<br></p>\n                    <div class=\"button-align\">\n                        <div class=\"mbr-section-btn\" mbr-if=\"showButton\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://contacto.guru/Wil2\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>WhatsApp</a><a class=\"btn btn-danger\" href=\"tel:17187137998\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn\"></span>Llamar</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-5\">\n                <div class=\"gray\">\n                    <img src=\"@PROJECT_PATH@/assets/images/amor-5.webp\" alt=\"Mobirise\" class=\"align\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sLnr1ytTKU",
+          "_anchor": "header1-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".row": {
+              "align-items": "center",
+              "justify-content": "space-between"
+            },
+            ".mbr-section-title": {
+              "width": "100%",
+              "text-align": "center",
+              "margin-bottom": "24px",
+              "color": "#ff4433"
+            },
+            ".mbr-text": {
+              "color": "#8c8c95",
+              "margin-bottom": "32px"
+            },
+            ".mbr-section-btn": {
+              "width": "auto",
+              "display": "block"
+            },
+            "ul": {
+              "padding-inline-start": "20px",
+              "margin-bottom": "28px"
+            },
+            "li::marker": {
+              "color": "@markerColor",
+              "width": "10px"
+            },
+            "li": {
+              "margin-bottom": "7px",
+              "color": "#14142b"
+            },
+            "img": {
+              "width": "90%"
+            },
+            ".gray": {
+              "background-color": "@accentColor",
+              "width": "80%",
+              "height": "430px",
+              "margin": "auto",
+              "position": "relative"
+            },
+            ".b": {
+              "max-width": "598px"
+            },
+            ".first": {
+              "position": "absolute",
+              "top": "-10%",
+              "right": "25%"
+            },
+            ".second": {
+              "position": "absolute",
+              "bottom": "-10%",
+              "left": "25%"
+            },
+            "@media (max-width: 992px)": {
+              ".t": {
+                "padding-top": "90px"
+              },
+              ".b": {
+                "max-width": "initial"
+              },
+              ".gray": {
+                "width": "50%"
+              }
+            },
+            "@media (max-width: 750px)": {
+              ".gray": {
+                "height": "330px"
+              }
+            },
+            "@media (max-width: 630px)": {
+              ".gray": {
+                "height": "230px"
+              }
+            },
+            "@media (max-width: 450px)": {
+              ".gray": {
+                "height": "200px",
+                "width": "70%"
+              }
+            },
+            ".btn": {
+              "margin-top": "20px"
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".t": {
+              "max-width": "542px"
+            },
+            ".mbr-text, .button-align, .list": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "creatorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Slide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"List\" name=\"showList\" checked>\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton\" checked>\n        <input type=\"color\" title=\"Marker Color\" name=\"markerColor\" value=\"#ff4433\">\n        <input type=\"color\" title=\"Accent\" name=\"accentColor\" value=\"#ff695c\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-between\">\n            <div class=\"col-12 col-lg-6 b\">\n                <div class=\"gray\">\n                    <img src=\"@PROJECT_PATH@/assets/images/eso-20.webp\" alt=\"Mobirise\" class=\"align first\">\n                    <img src=\"@PROJECT_PATH@/assets/images/eso-2.webp\" alt=\"Mobirise\" class=\"align second\">\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6 t\">\n                <div class=\"right-side\">\n                    <h5 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                        <b>Amarres de Amor</b></h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .button-align, .list\" mbr-if=\"showText\">\n                        Tienes algún problema en tu relación y no sabes como solucionarlo?<br><br> Nosotros te ayudamos, un buen amarre de amor para que seas feliz con tu pareja y solucionen toda dificultad que se presente \n                    </p>\n                    <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article mbr-if=\"showList\">\n                        <li><b>Sin efectos secundarios.</b></li>\n                        <li><b>Sin hacerle daño.</b></li>\n                        <li><b>Total privacidad, somos profesionales.</b></li>\n                    </ul>\n                    <div class=\"button-align\">\n                        <div class=\"mbr-section-btn\" mbr-if=\"showButton\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://contacto.guru/Wil2\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>WhatsApp</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sLy9uOhBoE",
+          "_anchor": "header2-f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-text": {
+              "color": "#8c8c95"
+            },
+            ".line": {
+              "height": "1px",
+              "width": "100%",
+              "background-color": "#c2c2c2",
+              "margin-bottom": "32px"
+            }
+          },
+          "_name": "footer1",
+          "_sourceTheme": "creatorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer1\" group=\"Footers\" global once=\"footers\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Line\" name=\"showLine\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f7f7f7\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row align-center mbr-white\">\n            <div class=\"col-12\">\n                <div class=\"line\" mbr-if=\"showLine\"></div>\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\">© Copyright - Templo Espiritual |&nbsp;&nbsp;<b>T</b>emplo</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sLnrtHEkJZ",
+          "_anchor": "footer1-c",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
