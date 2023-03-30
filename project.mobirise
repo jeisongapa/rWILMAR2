@@ -49,8 +49,8 @@
     "versionPublish": "5.7.4",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/l-5-128x128.png",
-    "mbrsiteDomain": "lvainitq2f",
-    "robotsSwitcher": false,
+    "mbrsiteDomain": "qf5wtjxxpf",
+    "robotsSwitcher": true,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
@@ -60,7 +60,8 @@
     "global_header_custom": "<!-- Google Tag Manager -->\n  <script>(function (w, d, s, l, i) {\n      w[l] = w[l] || []; w[l].push({\n        'gtm.start':\n          new Date().getTime(), event: 'gtm.js'\n      }); var f = d.getElementsByTagName(s)[0],\n        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =\n          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);\n    })(window, document, 'script', 'dataLayer', 'GTM-KCBBD3S');</script>\n  <!-- End Google Tag Manager -->",
     "global_after_body": "<!-- Google Tag Manager (noscript) -->\n  <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KCBBD3S\" height=\"0\" width=\"0\"\n      style=\"display:none;visibility:hidden\"></iframe></noscript>\n  <!-- End Google Tag Manager (noscript) -->\n\n<a href=\"https://contacto.guru/Wil2\" class=\"whatsapp position-fixed\"\n    target=\"_blank \" rel=\"noreferrer\">\n    <i class=\"fab fa-whatsapp whatsapp-icon\"></i> WhatsApp</a>\n\n\n",
     "publishChangesOnly": true,
-    "global_footer_custom": "<!--Start of Tawk.to Script-->\n  <script type=\"text/javascript\">\n    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();\n    (function () {\n      var s1 = document.createElement(\"script\"), s0 = document.getElementsByTagName(\"script\")[0];\n      s1.async = true;\n      s1.src = 'https://embed.tawk.to/618dcb276bb0760a49423ce2/1fk8u34h5';\n      s1.charset = 'UTF-8';\n      s1.setAttribute('crossorigin', '*');\n      s0.parentNode.insertBefore(s1, s0);\n    })();\n  </script>\n  <!--End of Tawk.to Script-->"
+    "global_footer_custom": "<!--Start of Tawk.to Script-->\n  <script type=\"text/javascript\">\n    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();\n    (function () {\n      var s1 = document.createElement(\"script\"), s0 = document.getElementsByTagName(\"script\")[0];\n      s1.async = true;\n      s1.src = 'https://embed.tawk.to/618dcb276bb0760a49423ce2/1fk8u34h5';\n      s1.charset = 'UTF-8';\n      s1.setAttribute('crossorigin', '*');\n      s0.parentNode.insertBefore(s1, s0);\n    })();\n  </script>\n  <!--End of Tawk.to Script-->",
+    "robotsText": "User-agent: Mediapartners-Google\nDisallow: \n\nUser-agent: *\nDisallow: /search\nAllow: /"
   },
   "pages": {
     "index.html": {
