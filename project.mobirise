@@ -49,7 +49,7 @@
     "versionPublish": "5.7.4",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/l-5-128x128.png",
-    "mbrsiteDomain": "rx3iwryq8e",
+    "mbrsiteDomain": "lvainitq2f",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
@@ -66,7 +66,7 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Recupere a su ser Amado",
+        "title": "Amarres de Amor",
         "meta_descr": "Tenemos experiencia en amarres de amor, ayudamos a que su pareja regrese.",
         "header_custom": "",
         "footer_custom": "",
